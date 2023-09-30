@@ -3,7 +3,7 @@ const useResponsive = () => {
   const [width, setWidth] = useState('');
     useEffect(() => {
         const handleResize = () => {
-          if (window.innerWidth >= 700) {
+          if (window.outerWidth >= 700) {
             setWidth('max');
           } else {
             setWidth('minimum');
