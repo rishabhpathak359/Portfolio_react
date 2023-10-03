@@ -1,20 +1,7 @@
-// import React from 'react'
-
-// const Contact = () => {
-//   return (
-//     <div id='contact' className='w-full h-screen mt-20 pt-20 text-white text-4xl flex flex-col items-center  bg-black'>
-//     <div className='max-w-screen-xl '>
-//    Contact
-//    </div>
-//    </div>
-//   )
-// }
-
-// export default Contact
 import React, { useRef,useState } from 'react';
 import emailjs from '@emailjs/browser';
-import Telegraf from '../Telegraf';
 import Sentmessage from '../Sentmessage';
+import {motion} from "framer-motion"
 
  const Contact = () => {
   const[clicked,setclicked]=useState(false);
@@ -35,8 +22,14 @@ const toggleModal=()=>{
 
   return (
     <>
+    <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1, transition: { duration: 1 } }}
+          viewport={{ once: false }}
+          className="codeutsava__contact-container"
+        >
     <div id='contact' className='w-screen h-screen mt-20 pt-20 text-white text-4xl flex flex-col items-center z-10  bg-blue-950'>
-      Write a message!!
+      <h1 className='text-5xl'>Write a message!!</h1>
     <form ref={form} onSubmit={sendEmail}  className='w-[80vw] sm:w-1/2 '>
     <div className='max-w-screen-xl flex flex-col pt-14'>
       <label className='text-lg p-2'>Name</label>
@@ -50,6 +43,7 @@ const toggleModal=()=>{
     </form>
     </div>
     {clicked && <Sentmessage toggleModal={toggleModal} />}
+    </motion.div>
     </>
   );
 };

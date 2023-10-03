@@ -46,10 +46,11 @@ const Navbar = () => {
 </svg>
                 Y</button>
                 <div className='pt-7'>
-                  <li className="px-2 mx-5 py-8 border-b-2 border-">Home</li>
-                  <li className="px-2 mx-5 py-8 border-b-2">Skills</li>
-                  <li className="px-2 mx-5 py-8 border-b-2">Projects</li>
-                  <li className="px-2 mx-5 py-8 border-b-2">Contact</li>
+                 <a href='#home'> <li className="px-2 mx-5 py-8 border-b-2 " onClick={()=>toggleMenu()}>Home</li></a>
+                 <a href='#about'> <li className="px-2 mx-5 py-8 border-b-2 " onClick={()=>toggleMenu()}>About</li></a>
+                 <a href='#skills'><li className="px-2 mx-5 py-8 border-b-2" onClick={()=>toggleMenu()} >Skills</li></a>
+                 <a href='#Projects'><li className="px-2 mx-5 py-8 border-b-2" onClick={()=>toggleMenu()}>Projects</li></a>
+                 <a href='#contact'><li className="px-2 mx-5 py-8 border-b-2" onClick={()=>toggleMenu()}>Contact</li></a> 
                   </div>
                 </ul>
               </div>

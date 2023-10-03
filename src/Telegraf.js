@@ -3,9 +3,9 @@ import React from 'react'
  const Telegraf = () => {
     return (
      
-        <div className="bg-orange-100 max-w-[50vw]  mx-auto p-6 rounded-lg shadow-md text-left">
+        <div className="bg-orange-100 md:max-w-[50vw] max-w-[90vw]  mx-auto p-6 rounded-lg shadow-md text-left">
            <div className="py-8">
-        <p className='text-3xl font-semibold'>Oh! you're here I have Something to say...</p>
+        <p className='text-xl md:text-3xl font-semibold'>Oh! you're here I have Something to say...</p>
         <p className='text-sm font-semibold text-gray-500 pt-2'>RishabhOG <span className="text-sm">June 15, 2022</span></p>
         </div>
           <p>Hey buddy,</p>
