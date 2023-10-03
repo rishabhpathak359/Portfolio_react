@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Telegraf from '../Telegraf';
+import {motion} from 'framer-motion';
 
 const AboutMe = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -28,6 +29,11 @@ const AboutMe = () => {
   };
 
   return (
+    <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1, transition: { duration: 1 } }}
+          viewport={{ once: false }}
+        >
     <div id='about' className="h-screen flex items-center bg-gray-900 text-white flex-col p-4  md:p-0">
       <div className="w-full text-center pt-32">
         <h2 className="text-xl md:text-5xl font-semibold mb-4">Wanna know <span className='text-blue-400'>About</span> Me?</h2>
@@ -60,6 +66,7 @@ const AboutMe = () => {
         </div>
       )}
     </div>
+    </motion.div>
   );
 };
 

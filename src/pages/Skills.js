@@ -1,7 +1,12 @@
 import React from 'react';
-
+import {motion} from 'framer-motion'
 const Skills = () => {
     return (
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1, transition: { duration: 1 } }}
+          viewport={{ once: false }}
+        >
         <div id='skills' className="w-full text-white text-4xl mt-11 px-4">
             <div className="max-w-screen-xl relative flex flex-col items-center mx-auto">
                 <h2 className="text-3xl font-semibold pb-8">Skills</h2>
@@ -46,6 +51,7 @@ const Skills = () => {
                 </div>
             </div>
         </div>
+    </motion.div>
     );
 }
 

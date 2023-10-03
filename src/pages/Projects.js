@@ -1,23 +1,31 @@
 import React from 'react'
-
+import {motion} from 'framer-motion';
 const Projects = () => {
   return (
+    <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1, transition: { duration: 1 } }}
+          viewport={{ once: false }}
+        >
     <div id='Projects' className='scroll-smooth w-full -full text-white text-4xl flex flex-col items-center pt-14 mt-32 bg-green-950 '>
       Projects
     <div className='max-w-screen-xl flex-col justify-center items-center sm:flex sm:flex-row sm:flex-wrap p-5'>
+
+      {/* ###################### Weather app ##################### */}
       <div className=' shadow-lg   w-[80vw] hover:shadow-xl hover:shadow-green-300 shadow-green-500 rounded-lg sm:w-80 p-5 sm:h-[520px] sm:ml-8 sm:mt-5 sm:mb-5 mt-10 flex flex-col  items-center bg-green-600 bg-opacity-60 '>
     <img className='h-28 sm:h-44 rounded-lg lg:h-auto ' src='https://s3-alpha.figma.com/hub/file/1045847374/ae76ee66-07fc-4247-8a04-882781d5b799-cover.png'/>
         <h1 className="text-lg font-semibold text-green-200 pt-2">Weather App</h1>
         <h1 className="text-sm sm:text-lg pt-4">As the name suggests,it is a basic weather app created using HTML,CSS,JS and a NodeJS backend.It displays you the live weather data,you can search for any city or country.</h1>
         <div className='flex sm:pt-8 pt-5'>
-          <button className='text-sm w-24 h-8 sm:text-lg sm:w-28 sm:h-11 border-2 border-green-900 rounded-xl mr-5 pl-2 pt-1 sm:pl-2 sm:pt-1 hover:bg-green-950 hover:text-green-300'>
+          <a href='https://github.com/rishabhpathak359/WeatherApp'><button className='text-sm w-24 h-8 sm:text-lg sm:w-28 sm:h-11 border-2 border-green-900 rounded-xl mr-5 pl-2 pt-1 sm:pl-2 sm:pt-1 hover:bg-green-950 hover:text-green-300'>
            <svg className='fill-green-300 sm:w-7 sm:pt-1 w-5  relative bottom-1 ' fill="#000000" width="30px" height="30px" viewBox="0 0 35 26" version="1.1" xmlns="http://www.w3.org/2000/svg">
            <title>github</title>
            <path d="M16 1.375c-8.282 0-14.996 6.714-14.996 14.996 0 6.585 4.245 12.18 10.148 14.195l0.106 0.031c0.75 0.141 1.025-0.322 1.025-0.721 0-0.356-0.012-1.3-0.019-2.549-4.171 0.905-5.051-2.012-5.051-2.012-0.288-0.925-0.878-1.685-1.653-2.184l-0.016-0.009c-1.358-0.93 0.105-0.911 0.105-0.911 0.987 0.139 1.814 0.718 2.289 1.53l0.008 0.015c0.554 0.995 1.6 1.657 2.801 1.657 0.576 0 1.116-0.152 1.582-0.419l-0.016 0.008c0.072-0.791 0.421-1.489 0.949-2.005l0.001-0.001c-3.33-0.375-6.831-1.665-6.831-7.41-0-0.027-0.001-0.058-0.001-0.089 0-1.521 0.587-2.905 1.547-3.938l-0.003 0.004c-0.203-0.542-0.321-1.168-0.321-1.821 0-0.777 0.166-1.516 0.465-2.182l-0.014 0.034s1.256-0.402 4.124 1.537c1.124-0.321 2.415-0.506 3.749-0.506s2.625 0.185 3.849 0.53l-0.1-0.024c2.849-1.939 4.105-1.537 4.105-1.537 0.285 0.642 0.451 1.39 0.451 2.177 0 0.642-0.11 1.258-0.313 1.83l0.012-0.038c0.953 1.032 1.538 2.416 1.538 3.937 0 0.031-0 0.061-0.001 0.091l0-0.005c0 5.761-3.505 7.029-6.842 7.398 0.632 0.647 1.022 1.532 1.022 2.509 0 0.093-0.004 0.186-0.011 0.278l0.001-0.012c0 2.007-0.019 3.619-0.019 4.106 0 0.394 0.262 0.862 1.031 0.712 6.028-2.029 10.292-7.629 10.292-14.226 0-8.272-6.706-14.977-14.977-14.977-0.006 0-0.013 0-0.019 0h0.001z"></path>
           </svg><h1 className='relative bottom-7 left-2 sm:bottom-7 sm:left-3'>
           Github</h1>
-           </button>
-          <button className='text-sm sm:text-lg border-2 rounded-xl border-green-900 py-1 px-2 sm:px-2 sm:py-1 hover:bg-green-950 hover:text-green-300'>Demo</button>
+           </button></a>
+          <a href='weatherapp-zbmk.onrender.com/'>
+            <button className='text-sm sm:text-lg border-2 rounded-xl border-green-900 h-fit py-1 px-2 sm:px-2 relative md:bottom-2  bottom-3 hover:bg-green-950 hover:text-green-300'>Demo</button></a>
         </div>
       </div>
       <div className=' w-[80vw] shadow-lg  hover:shadow-xl hover:shadow-green-300 shadow-green-500 rounded-lg sm:w-80 p-5 sm:h-[520px] sm:m-5 mt-10 flex flex-col  items-center bg-green-600 bg-opacity-60'>
@@ -25,12 +33,13 @@ const Projects = () => {
         <h1 className="text-lg font-semibold text-green-200 pt-2">Good Food</h1>
         <h1 className="text-sm sm:text-lg ">A dummy food ordering website created using ReactJS that incorporates powerful features like - user authorization,search bar with filter functionality,selecting a restaurant-picking an item and then adding it to cart and many more.</h1>
         <div className='flex sm:pt-2 pt-3'>
-        <button className='text-sm w-24 h-8 sm:text-lg sm:w-28 sm:h-11  border-2 border-green-900 rounded-xl mr-5 pl-2 pt-1 p-1  hover:bg-green-950 hover:text-green-300'>
+        <a href='https://github.com/rishabhpathak359/GoodFood'><button className='text-sm w-24 h-8 sm:text-lg sm:w-28 sm:h-11  border-2 border-green-900 rounded-xl mr-5 pl-2 pt-1 p-1  hover:bg-green-950 hover:text-green-300'>
            <svg className='fill-green-300 sm:w-7 sm:pt-1 w-5 relative bottom-1' fill="#000000" width="30px" height="30px" viewBox="0 0 35 26" version="1.1" xmlns="http://www.w3.org/2000/svg">
            <title>github</title>
            <path d="M16 1.375c-8.282 0-14.996 6.714-14.996 14.996 0 6.585 4.245 12.18 10.148 14.195l0.106 0.031c0.75 0.141 1.025-0.322 1.025-0.721 0-0.356-0.012-1.3-0.019-2.549-4.171 0.905-5.051-2.012-5.051-2.012-0.288-0.925-0.878-1.685-1.653-2.184l-0.016-0.009c-1.358-0.93 0.105-0.911 0.105-0.911 0.987 0.139 1.814 0.718 2.289 1.53l0.008 0.015c0.554 0.995 1.6 1.657 2.801 1.657 0.576 0 1.116-0.152 1.582-0.419l-0.016 0.008c0.072-0.791 0.421-1.489 0.949-2.005l0.001-0.001c-3.33-0.375-6.831-1.665-6.831-7.41-0-0.027-0.001-0.058-0.001-0.089 0-1.521 0.587-2.905 1.547-3.938l-0.003 0.004c-0.203-0.542-0.321-1.168-0.321-1.821 0-0.777 0.166-1.516 0.465-2.182l-0.014 0.034s1.256-0.402 4.124 1.537c1.124-0.321 2.415-0.506 3.749-0.506s2.625 0.185 3.849 0.53l-0.1-0.024c2.849-1.939 4.105-1.537 4.105-1.537 0.285 0.642 0.451 1.39 0.451 2.177 0 0.642-0.11 1.258-0.313 1.83l0.012-0.038c0.953 1.032 1.538 2.416 1.538 3.937 0 0.031-0 0.061-0.001 0.091l0-0.005c0 5.761-3.505 7.029-6.842 7.398 0.632 0.647 1.022 1.532 1.022 2.509 0 0.093-0.004 0.186-0.011 0.278l0.001-0.012c0 2.007-0.019 3.619-0.019 4.106 0 0.394 0.262 0.862 1.031 0.712 6.028-2.029 10.292-7.629 10.292-14.226 0-8.272-6.706-14.977-14.977-14.977-0.006 0-0.013 0-0.019 0h0.001z"></path>
-</svg><h1 className='relative bottom-7 left-3'>Github</h1></button>
-          <button className='text-sm sm:text-lg border-2 rounded-xl border-green-900  hover:bg-green-950 hover:text-green-300 px-2 sm:px-2 sm:py-1'>Demo</button>
+</svg><h1 className='relative bottom-7 left-3'>Github</h1></button></a>
+          <a href='https://vercel.com/coderishog/good-food'><button className='h-fit relative md:bottom-2  bottom-3 text-sm sm:text-lg border-2 rounded-xl border-green-900  hover:bg-green-950 hover:text-green-300 px-2 sm:px-2 py-1'>Demo</button>
+          </a>    
         </div>
       </div>
       <div className=' w-[80vw] shadow-lg hover:shadow-xl hover:shadow-green-300 shadow-green-500 rounded-lg sm:w-80 p-5 sm:h-[520px] sm:m-5 mt-10 flex flex-col  items-center bg-green-600 bg-opacity-60'>
@@ -38,30 +47,34 @@ const Projects = () => {
         <h1 className="text-lg font-semibold text-green-200 pt-2">Text-to-Speech Bot</h1>
         <h1 className="text-sm sm:text-lg ">A tts telegram bot that is capable of translating text of different languages into speech of different languages as per users choice and multiple voices are also provided for user convinience.</h1>
         <div className='flex pt-8'>
-        <button className='text-sm w-24 h-8 sm:text-lg sm:w-28 sm:h-11  border-2 border-green-900 rounded-xl mr-5 pl-2 pt-1 p-1  hover:bg-green-950 hover:text-green-300'>
+        <a href='https://github.com/rishabhpathak359/text2speech'><button className='text-sm w-24 h-8 sm:text-lg sm:w-28 sm:h-11  border-2 border-green-900 rounded-xl mr-5 pl-2 pt-1 p-1  hover:bg-green-950 hover:text-green-300'>
            <svg className='fill-green-300 sm:w-7 sm:pt-1 w-5 relative bottom-1' fill="#000000" width="30px" height="30px" viewBox="0 0 35 26" version="1.1" xmlns="http://www.w3.org/2000/svg">
            <title>github</title>
            <path d="M16 1.375c-8.282 0-14.996 6.714-14.996 14.996 0 6.585 4.245 12.18 10.148 14.195l0.106 0.031c0.75 0.141 1.025-0.322 1.025-0.721 0-0.356-0.012-1.3-0.019-2.549-4.171 0.905-5.051-2.012-5.051-2.012-0.288-0.925-0.878-1.685-1.653-2.184l-0.016-0.009c-1.358-0.93 0.105-0.911 0.105-0.911 0.987 0.139 1.814 0.718 2.289 1.53l0.008 0.015c0.554 0.995 1.6 1.657 2.801 1.657 0.576 0 1.116-0.152 1.582-0.419l-0.016 0.008c0.072-0.791 0.421-1.489 0.949-2.005l0.001-0.001c-3.33-0.375-6.831-1.665-6.831-7.41-0-0.027-0.001-0.058-0.001-0.089 0-1.521 0.587-2.905 1.547-3.938l-0.003 0.004c-0.203-0.542-0.321-1.168-0.321-1.821 0-0.777 0.166-1.516 0.465-2.182l-0.014 0.034s1.256-0.402 4.124 1.537c1.124-0.321 2.415-0.506 3.749-0.506s2.625 0.185 3.849 0.53l-0.1-0.024c2.849-1.939 4.105-1.537 4.105-1.537 0.285 0.642 0.451 1.39 0.451 2.177 0 0.642-0.11 1.258-0.313 1.83l0.012-0.038c0.953 1.032 1.538 2.416 1.538 3.937 0 0.031-0 0.061-0.001 0.091l0-0.005c0 5.761-3.505 7.029-6.842 7.398 0.632 0.647 1.022 1.532 1.022 2.509 0 0.093-0.004 0.186-0.011 0.278l0.001-0.012c0 2.007-0.019 3.619-0.019 4.106 0 0.394 0.262 0.862 1.031 0.712 6.028-2.029 10.292-7.629 10.292-14.226 0-8.272-6.706-14.977-14.977-14.977-0.006 0-0.013 0-0.019 0h0.001z"></path>
-</svg><h1 className='relative bottom-7 left-3'>Github</h1></button>
-          <button className='text-sm sm:text-lg border-2 rounded-xl border-green-900  hover:bg-green-950 hover:text-green-300 px-2 sm:px-2 sm:py-1'>Demo</button>
-        </div>
+</svg><h1 className='relative bottom-7 left-3'>Github</h1></button></a>
+         < a href='https://t.me/text_to_speech_2_bot'><button className='relative md:bottom-2  bottom-3 h-fit text-sm sm:text-lg border-2 rounded-xl border-green-900  hover:bg-green-950 hover:text-green-300 px-2 sm:px-2 py-1'>Demo</button>
+        </a></div>
       </div>
       <div className='  w-[80vw] shadow-lg  hover:shadow-xl hover:shadow-green-300 shadow-green-500 rounded-lg sm:w-80 p-5 sm:h-[520px] sm:mt-5 sm:mb-5 mt-10 mb-5  flex flex-col  items-center bg-green-600 bg-opacity-60'>
     <img className='rounded-lg h-28 sm:h-44' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgjLYHP1CJ_qTq1Z5nykC7oXquc5O0rhOY_w&usqp=CAU'/>
         <h1 className="text-lg font-semibold text-green-200 pt-2">WeluvDog</h1>
         <h1 className="text-sm sm:text-lg">A dog breed image generator telegram bot for dog lovers.You enter a breed name and no. of images you want rest things the bot will take care of :)</h1>
         <div className='flex pt-8'>
-        <button className='text-sm w-24 h-8 sm:text-lg sm:w-28 sm:h-11  border-2 border-green-900 rounded-xl mr-5 pl-2 pt-1 p-1  hover:bg-green-950 hover:text-green-300'>
+        <a href='https://github.com/rishabhpathak359/Dog_Breed_images_bot'><button className='text-sm w-24 h-8 sm:text-lg sm:w-28 sm:h-11  border-2 border-green-900 rounded-xl mr-5 pl-2 pt-1 p-1  hover:bg-green-950 hover:text-green-300'>
            <svg className='fill-green-300 sm:w-7 sm:pt-1 w-5 relative bottom-1' fill="#000000" width="30px" height="30px" viewBox="0 0 35 26" version="1.1" xmlns="http://www.w3.org/2000/svg">
            <title>github</title>
            <path d="M16 1.375c-8.282 0-14.996 6.714-14.996 14.996 0 6.585 4.245 12.18 10.148 14.195l0.106 0.031c0.75 0.141 1.025-0.322 1.025-0.721 0-0.356-0.012-1.3-0.019-2.549-4.171 0.905-5.051-2.012-5.051-2.012-0.288-0.925-0.878-1.685-1.653-2.184l-0.016-0.009c-1.358-0.93 0.105-0.911 0.105-0.911 0.987 0.139 1.814 0.718 2.289 1.53l0.008 0.015c0.554 0.995 1.6 1.657 2.801 1.657 0.576 0 1.116-0.152 1.582-0.419l-0.016 0.008c0.072-0.791 0.421-1.489 0.949-2.005l0.001-0.001c-3.33-0.375-6.831-1.665-6.831-7.41-0-0.027-0.001-0.058-0.001-0.089 0-1.521 0.587-2.905 1.547-3.938l-0.003 0.004c-0.203-0.542-0.321-1.168-0.321-1.821 0-0.777 0.166-1.516 0.465-2.182l-0.014 0.034s1.256-0.402 4.124 1.537c1.124-0.321 2.415-0.506 3.749-0.506s2.625 0.185 3.849 0.53l-0.1-0.024c2.849-1.939 4.105-1.537 4.105-1.537 0.285 0.642 0.451 1.39 0.451 2.177 0 0.642-0.11 1.258-0.313 1.83l0.012-0.038c0.953 1.032 1.538 2.416 1.538 3.937 0 0.031-0 0.061-0.001 0.091l0-0.005c0 5.761-3.505 7.029-6.842 7.398 0.632 0.647 1.022 1.532 1.022 2.509 0 0.093-0.004 0.186-0.011 0.278l0.001-0.012c0 2.007-0.019 3.619-0.019 4.106 0 0.394 0.262 0.862 1.031 0.712 6.028-2.029 10.292-7.629 10.292-14.226 0-8.272-6.706-14.977-14.977-14.977-0.006 0-0.013 0-0.019 0h0.001z"></path>
-</svg><h1 className='relative bottom-7 left-3'>Github</h1></button>
-          <button className='text-sm sm:text-lg  border-2 rounded-xl border-green-900  hover:bg-green-950 hover:text-green-300 px-2 sm:px-2 sm:py-1'>Demo</button>
-        </div>
+          </svg>
+          <h1 className='relative bottom-7 left-3'>Github</h1>
+          </button>
+          </a>
+          <a href='https://t.me/dog_lover_bot'><button className='relative md:bottom-2  bottom-3 h-fit  text-sm sm:text-lg  border-2 rounded-xl border-green-900  hover:bg-green-950 hover:text-green-300  px-2 py-1'>Demo</button>
+       </a> </div>
       </div>
       
    </div>
    </div>
+   </motion.div>
   )
 }
 

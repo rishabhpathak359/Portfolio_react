@@ -2,6 +2,7 @@ import React from 'react';
 import DP from '../assets/astronaut1.png';
 import useResponsive from '../utils/useResponsive';
 import Typewriter from '../utils/typewriter';
+import {motion} from 'framer-motion';
 const Home = () => {
   const texts = [
     'Hi There!',
@@ -10,6 +11,11 @@ const Home = () => {
   ];
   const width=useResponsive();
   return (
+    <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1, transition: { duration: 1 } }}
+          viewport={{ once: false }}
+        >
     <div id='home' className={width=="minimum"?'flex flex-col  items-center relative top-28  w-full h-[100vh]':'flex-col sm:flex sm:flex-row-reverse justify-between pt-60 px-11 w-full h-screen overflow-x-hidden z-10'}> {/* Added relative and z-10 */}
     <img
         src={DP}
@@ -24,6 +30,7 @@ const Home = () => {
         <Typewriter texts={texts}/>
       </div>
     </div>
+    </motion.div>
   );
 };
 

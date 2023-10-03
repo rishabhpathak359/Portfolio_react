@@ -26,7 +26,6 @@ const toggleModal=()=>{
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1, transition: { duration: 1 } }}
           viewport={{ once: false }}
-          className="codeutsava__contact-container"
         >
     <div id='contact' className='w-screen h-screen mt-20 pt-20 text-white text-4xl flex flex-col items-center z-10  bg-blue-950'>
       <h1 className='text-5xl'>Write a message!!</h1>
