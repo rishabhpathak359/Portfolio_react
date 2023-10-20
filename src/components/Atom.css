@@ -126,11 +126,12 @@
   }
   
   .language-icon {
+    font-size: 30px;
     position: absolute;
     width: 40px; /* Adjust the size of the icons as needed */
     height: 40px; /* Adjust the size of the icons as needed */
     color: var(--color);
-    top: 50%;
+    top: 58%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(-90deg);/* Initial rotation to align icons properly */
   }

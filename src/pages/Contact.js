@@ -27,8 +27,8 @@ const toggleModal=()=>{
           whileInView={{ opacity: 1, transition: { duration: 1 } }}
           viewport={{ once: false }}
         >
-    <div id='contact' className='w-screen h-screen mt-20 pt-20 text-white text-4xl flex flex-col items-center z-10  bg-blue-950'>
-      <h1 className='text-5xl'>Write a message!!</h1>
+    <div id='contact' className='w-screen h-screen mt-20 pt-20 text-white text-4xl flex flex-col items-center z-10  bg-gray-950'>
+      <h1 className='text-5xl'>Send me an e-mail</h1>
     <form ref={form} onSubmit={sendEmail}  className='w-[80vw] sm:w-1/2 '>
     <div className='max-w-screen-xl flex flex-col pt-14'>
       <label className='text-lg p-2'>Name</label>
