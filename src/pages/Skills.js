@@ -16,7 +16,7 @@ const Skills = () => {
                 <h2 className="text-3xl font-semibold pb-8">Skills</h2>
                 <div className='md:py-36 py-40 relative top-40'>
                 <div className='bg-black w-[70vw] md:w-[40vw] overflow-scroll md:h-72 text-sm md:text-sm flex flex-row md:flex-col relative md:right-24 rounded-lg'>
-                    <div className='flex md:flex-row flex-col text-center justify-center text-md md:text-lg sticky'>
+                    <div className='flex md:flex-row flex-col text-center justify-center text-md md:text-lg '>
                         <h1 className='p-4 cursor pointer hover:border-r-2 md:hover:border-b-2 flex ' onClick={()=>setskills(skillsarray[0])}><span className='px-2'><i class="fa-brands fa-js" ></i></span>Javascript</h1>
                         <h1 className='p-4 cursor pointer hover:border-r-2 md:hover:border-b-2 flex pr-16' onClick={()=>setskills(skillsarray[1])}><span className='px-1'><i class="fa-brands fa-react" ></i></span>ReactJS</h1>
                         <h1 className='p-4 cursor pointer hover:border-r-2 md:hover:border-b-2 flex pr-16' onClick={()=>setskills(skillsarray[2])}><span className='px-1'><i class="fa-brands fa-node-js" ></i></span> Nodejs</h1>
