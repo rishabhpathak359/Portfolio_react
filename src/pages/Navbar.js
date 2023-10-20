@@ -90,7 +90,7 @@ const Navbar = () => {
     <div
       className={`${
         width === 'minimum' ? 'md:min-w-min' : 'md:min-w-max'
-      }w-screen ${scrolled&&'bg-opacity-80 bg-orange-900'} px-5 py-10 flex justify-between text-white shadow-2xl sticky top-0 z-20 `}
+      }w-screen ${scrolled&&'backdrop-blur-lg backdrop-brightness-200'} px-5 py-10 flex justify-between text-white shadow-2xl sticky top-0 z-20 `}
     >
       <a href='/'>
         <h1 className='font-playfair text-3xl cursor-pointer'>RishabhOG</h1>
