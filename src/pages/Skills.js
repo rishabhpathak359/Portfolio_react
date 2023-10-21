@@ -27,7 +27,7 @@ return (
                                     alt="javascript logo" 
                                     className='h-5 sm:h-10 mr-2  transition duration-300 ease-in-out hover:text-yellow-400 hover:bg-gray-700'
                                 />
-                                <span className='hidden md:inline'>Javascript</span>
+                                <span className='hidden md:inline hover:border-b-2'>Javascript</span>
                             </li>
                             <li className='flex flex-col items-center cursor-pointer' onClick={()=>setskills(skillsarray[1])}>
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
@@ -35,7 +35,7 @@ return (
                                     alt="react logo" 
                                     className='h-5 sm:h-10 mr-2 '
                                 />
-                                <span className='hidden md:inline'>ReactJs</span>
+                                <span className='hidden md:inline hover:border-b-2'>ReactJs</span>
                             </li>
                             <li className='flex flex-col items-center cursor-pointer' onClick={()=>setskills(skillsarray[2])}>
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
@@ -43,7 +43,7 @@ return (
                                     alt="nodejs logo" 
                                     className='h-5 sm:h-10 mr-2 '
                                 />
-                                <span className='hidden md:inline'>NodeJs</span>
+                                <span className='hidden md:inline hover:border-b-2'>NodeJs</span>
                             </li>
                             <li className='flex flex-col items-center cursor-pointer' onClick={()=>setskills(skillsarray[3])}>
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
@@ -51,7 +51,7 @@ return (
                                     alt="java logo" 
                                     className='h-5 sm:h-10 mr-2 '
                                 />
-                                <span className='hidden md:inline'>Java</span>
+                                <span className='hidden md:inline hover:border-b-2'>Java</span>
                             </li>
                             <li className='flex flex-col items-center cursor-pointer' onClick={()=>setskills(skillsarray[4])}>
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
@@ -59,7 +59,7 @@ return (
                                     alt="cplusplus logo" 
                                     className='h-5 sm:h-10 mr-2 '
                                 />
-                                <span className='hidden md:inline'>C++</span>
+                                <span className='hidden md:inline hover:border-b-2'>C++</span>
                             </li>
                             <li className='flex flex-col items-center cursor-pointer' onClick={()=>setskills(skillsarray[5])}>
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
@@ -67,7 +67,7 @@ return (
                                     alt="tailwindcss logo" 
                                     className='h-5 sm:h-10 mr-2 '
                                 />
-                                <span className='hidden md:inline'>Tailwindcss</span>
+                                <span className='hidden md:inline hover:border-b-2'>Tailwindcss</span>
                             </li>
                         </ul>
                     </header>

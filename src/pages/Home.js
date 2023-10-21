@@ -23,7 +23,7 @@ const Home = () => {
           whileInView={{ opacity: 1, transition: { duration: 1 } }}
           viewport={{ once: true }}
         >
-    <div id='home' className={width=="minimum"?'flex flex-col-reverse  items-center relative bottom-56 w-full h-[100vh]':'flex sm:flex  justify-between pt-44 px-11 w-full h-screen overflow-x-hidden z-10'}> {/* Added relative and z-10 */}
+    <div id='home' className={width=="minimum"?'flex flex-col-reverse  items-center relative bottom-36 w-full h-[100vh]':'flex sm:flex  justify-between pt-44 px-11 w-full h-screen overflow-x-hidden z-10'}> {/* Added relative and z-10 */}
       <div className='font-serif text-blue-700 text-3xl sm:text-4xl md:text-5xl md:pl-20 pt-8'>
         <motion.h1 
          initial={{opacity:0}}
