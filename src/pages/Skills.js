@@ -23,6 +23,7 @@ return (
                         <ul className='text-white flex justify-between text-xs'>
                             <li className='flex flex-col items-center cursor-pointer hover:' onClick={()=>setskills(skillsarray[0])}>
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                                width="30"
                                     height="30" 
                                     alt="javascript logo" 
                                     className='h-5 sm:h-10 mr-2  transition duration-300 ease-in-out hover:text-yellow-400 hover:bg-gray-700'
@@ -31,6 +32,7 @@ return (
                             </li>
                             <li className='flex flex-col items-center cursor-pointer' onClick={()=>setskills(skillsarray[1])}>
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                                    width="30"
                                     height="30" 
                                     alt="react logo" 
                                     className='h-5 sm:h-10 mr-2 '
@@ -39,6 +41,7 @@ return (
                             </li>
                             <li className='flex flex-col items-center cursor-pointer' onClick={()=>setskills(skillsarray[2])}>
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                                    width="30"
                                     height="30" 
                                     alt="nodejs logo" 
                                     className='h-5 sm:h-10 mr-2 '
@@ -47,6 +50,7 @@ return (
                             </li>
                             <li className='flex flex-col items-center cursor-pointer' onClick={()=>setskills(skillsarray[3])}>
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                                    width="30"
                                     height="30" 
                                     alt="java logo" 
                                     className='h-5 sm:h-10 mr-2 '
@@ -55,6 +59,7 @@ return (
                             </li>
                             <li className='flex flex-col items-center cursor-pointer' onClick={()=>setskills(skillsarray[4])}>
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
+                                    width="30"
                                     height="30" 
                                     alt="cplusplus logo" 
                                     className='h-5 sm:h-10 mr-2 '
@@ -63,6 +68,7 @@ return (
                             </li>
                             <li className='flex flex-col items-center cursor-pointer' onClick={()=>setskills(skillsarray[5])}>
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
+                                    width="30"
                                     height="30" 
                                     alt="tailwindcss logo" 
                                     className='h-5 sm:h-10 mr-2 '
