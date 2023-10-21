@@ -47,9 +47,9 @@ const Home = () => {
             animate={{x:0}}
             transition={{delay:1.2}}
             className='flex space-x-2'>
-            <button className='text-lg border bg-blue-500 border-blue-300 px-2 relative md:bottom-4 rounded-sm w-28 md:w-44 hover:bg-white hover:text-blue-500 text-white h-10' onClick={handleDownload}>Resume</button>
+            <button className='md:text-lg text-sm border bg-blue-500 border-blue-300 px-2 relative md:bottom-4 rounded-sm w-28 md:w-44 hover:bg-white hover:text-blue-500 text-white h-10' onClick={handleDownload}>Resume</button>
             <a href='#contact'>
-            <button className='text-lg border border-blue-300 px-5  relative md:bottom-8 bottom-1 rounded-sm hover:bg-blue-500 hover:text-white  h-10'>Let's Talk</button>
+            <button className='md:text-lg text-sm border border-blue-300 px-5  relative md:bottom-8 bottom-1 rounded-sm hover:bg-blue-500 hover:text-white  h-10'>Let's Talk</button>
             </a>
             
             </motion.div>
