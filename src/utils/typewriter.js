@@ -39,7 +39,7 @@ const Typewriter = ({ texts }) => {
     <div className="typewriter">
       {displayedText}
       <span
-    className={`inline-block w-1 h-11 bg-gray-800 ml-2 animate-blink ${
+    className={`inline-block w-1 h-11 bg-blue-800 ml-2 animate-blink ${
       cursorVisible ? 'visible' : 'invisible'
     }`}
   ></span>

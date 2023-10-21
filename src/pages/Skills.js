@@ -66,9 +66,8 @@ return (
                             </li>
                         </ul>
                     </header>
-                    {/* <div className='text-white px-8 py-4 text-base mt-10 overflow-y-auto mb-10'> */}
                     <motion.div
-                            className='text-white px-8 py-4 text-base mt-20 overflow-y-auto'
+                            className='text-white px-8 py-4 text-base mt-10 overflow-y-auto'
                             initial={{ x: '100%' }}
                             animate={{ x: 0 }}
                             exit={{ x: '100%' }}
@@ -76,7 +75,6 @@ return (
                         >
                         {skills}
                         </motion.div>
-                    {/* </div> */}
                 </div>
                 <div>
                     <Atom/>
