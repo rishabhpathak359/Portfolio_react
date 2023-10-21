@@ -29,7 +29,7 @@ const Home = () => {
          initial={{opacity:0}}
          animate={{opacity:1}}
          transition={{delay:0.4}}
-        className='text-white pb-5'>Hello <span className='text-blue-300' >There!!</span>
+        className='text-white pb-5 '>Hello <span className='text-blue-300' >There!!</span>
         </motion.h1>
         <motion.div
         initial={{opacity:0 , x:-50}}
