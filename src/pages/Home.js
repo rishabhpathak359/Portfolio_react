@@ -24,12 +24,12 @@ const Home = () => {
           viewport={{ once: true }}
         >
     <div id='home' className={width=="minimum"?'flex flex-col-reverse  items-center relative bottom-36 w-full h-[100vh]':'flex sm:flex  justify-between pt-44 px-11 w-full h-screen overflow-x-hidden z-10'}> {/* Added relative and z-10 */}
-      <div className='font-serif text-blue-700 text-3xl sm:text-4xl md:text-5xl md:pl-20 pt-8'>
+      <div className='font-serif text-blue-700 text-3xl sm:text-4xl md:text-5xl md:pl-20 pt-8 pl-3'>
         <motion.h1 
          initial={{opacity:0}}
          animate={{opacity:1}}
          transition={{delay:0.4}}
-        className='text-white pb-5 '>Hello <span className='text-blue-300' >There!!</span>
+        className='text-white pb-5  '>Hello <span className='text-blue-300' >There!!</span>
         </motion.h1>
         <motion.div
         initial={{opacity:0 , x:-50}}
