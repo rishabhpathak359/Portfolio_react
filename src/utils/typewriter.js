@@ -36,7 +36,7 @@ const Typewriter = ({ texts }) => {
   }, [currentTextIndex, texts]);
 
   return (
-    <div className="typewriter">
+    <div className="typewriter text-2xl sm:text-4xl">
       {displayedText}
       <span
     className={`inline-block w-1 h-11 bg-blue-800 ml-2 animate-blink ${

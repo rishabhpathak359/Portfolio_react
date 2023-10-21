@@ -24,12 +24,12 @@ const Home = () => {
           viewport={{ once: true }}
         >
     <div id='home' className={width=="minimum"?'flex flex-col-reverse  items-center relative bottom-36 w-full h-[100vh]':'flex sm:flex  justify-between pt-44 px-11 w-full h-screen overflow-x-hidden z-10'}> {/* Added relative and z-10 */}
-      <div className='font-serif text-blue-700 text-3xl sm:text-4xl md:text-5xl md:pl-20 pt-8 pl-3'>
+      <div className='font-serif text-blue-700 text-3xl sm:text-4xl md:text-5xl md:pl-20 pt-8 pl-5'>
         <motion.h1 
          initial={{opacity:0}}
          animate={{opacity:1}}
          transition={{delay:0.4}}
-        className='text-white pb-5  '>Hello <span className='text-blue-300' >There!!</span>
+        className='text-white pb-2 md:pb-5 sm:text-5xl text-3xl'>Hello <span className='text-blue-300' >There!!</span>
         </motion.h1>
         <motion.div
         initial={{opacity:0 , x:-50}}
@@ -39,7 +39,7 @@ const Home = () => {
         <motion.h1 
          initial={{opacity:0}}
          animate={{opacity:1}}
-         transition={{delay:0.6}} className='text-white pt-5'>I'm a <span className='text-blue-300'>Frontend <span className='text-blue-500'>Developer</span></span>
+         transition={{delay:0.6}} className='text-white md:text-5xl text-3xl pt-5'>I'm a <span className='text-blue-300'>Frontend <span className='text-blue-500'>Developer</span></span>
          </motion.h1>
         <div className='flex flex-col pt-10'>
           <motion.div
@@ -47,9 +47,9 @@ const Home = () => {
             animate={{x:0}}
             transition={{delay:1.2}}
             className='flex space-x-2'>
-            <button className='text-lg border bg-blue-500 border-blue-300 px-2 relative md:bottom-4 rounded-sm w-44 hover:bg-white hover:text-blue-500 text-white h-10' onClick={handleDownload}>Resume</button>
+            <button className='text-lg border bg-blue-500 border-blue-300 px-2 relative md:bottom-4 rounded-sm w-28 md:w-44 hover:bg-white hover:text-blue-500 text-white h-10' onClick={handleDownload}>Resume</button>
             <a href='#contact'>
-            <button className='text-lg border border-blue-300 px-5  relative md:bottom-8 rounded-sm hover:bg-blue-500 hover:text-white h-10'>Let's Talk</button>
+            <button className='text-lg border border-blue-300 px-5  relative md:bottom-8 bottom-1 rounded-sm hover:bg-blue-500 hover:text-white  h-10'>Let's Talk</button>
             </a>
             
             </motion.div>
