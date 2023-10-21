@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import Telegraf from '../Telegraf';
+import Telegraf from '../utils/Telegraf';
 import {motion} from 'framer-motion';
 
 const AboutMe = () => {
@@ -36,14 +36,22 @@ const AboutMe = () => {
         >
     <div id='about' className="h-screen flex items-center bg-gray-900 text-white flex-col p-4  md:p-0">
       <div className="w-full text-center pt-32">
-        <h2 className="text-xl md:text-5xl font-semibold mb-4">Wanna know <span className='text-blue-400'>About</span> Me?</h2>
+        <motion.h2
+        initial={{y:-80}}
+        whileInView={{ y:0, transition: { duration: 0.3 } }}
+        viewport={{ once: false }}
+        className="text-xl md:text-5xl font-semibold mb-4">Wanna know <span className='text-blue-400'>About</span> Me?
+        </motion.h2>
         <div className='flex justify-start items-start'>
-        <ul className="text-sm md:text-lg flex flex-col mt-8 mb-4 md:mb-8 w-full px-2">
-          <li className='w-full mb-8 mt-5'>My name is Rishabh Pathak.</li>
-          <li className='w-full mb-8'>Currently, I am a second-year student pursuing my B.Tech in Electrical Engineering from NIT Raipur.</li>
+        <motion.ul 
+        initial={{opacity:0,}}
+        whileInView={{opacity:1, transition:{duration:0.8}}}
+        className="text-sm md:text-lg flex flex-col mt-8 mb-4 md:mb-8 w-full px-2">
+          <li className='w-full mb-8 mt-5'>My name is <span className='text-blue-300'>Rishabh Pathak.</span></li>
+          <li className='w-full mb-8'>Currently, I am a second-year student pursuing my <span className='text-blue-300'>B.Tech</span> in Electrical Engineering from <span className='text-blue-300'>NIT Raipur.</span></li>
           <li className='w-full mb-8'>Apart from coding, I am passionate about video editing and I am skilled in using software like Pr and Ae.</li>
           <li className='w-full mb-8'>Most of the time you can find me either coding some stuff or editing videos.</li>
-        </ul>
+        </motion.ul>
         </div>
         <button
           onClick={toggleModal}

@@ -1,6 +1,6 @@
 import React, { useRef,useState } from 'react';
 import emailjs from '@emailjs/browser';
-import Sentmessage from '../Sentmessage';
+import Sentmessage from '../utils/Sentmessage';
 import {motion} from "framer-motion"
 
  const Contact = () => {
@@ -28,7 +28,7 @@ const toggleModal=()=>{
           viewport={{ once: false }}
         >
     <div id='contact' className='w-screen h-screen mt-20 pt-20 text-white text-4xl flex flex-col items-center z-10  bg-gray-950'>
-      <h1 className='text-5xl'>Send me an e-mail</h1>
+      <h1 className='md:text-5xl text-3xl'>Send me an <span className='text-blue-400'>e-mail</span></h1>
     <form ref={form} onSubmit={sendEmail}  className='w-[80vw] sm:w-1/2 '>
     <div className='max-w-screen-xl flex flex-col pt-14'>
       <label className='text-lg p-2'>Name</label>
@@ -37,7 +37,7 @@ const toggleModal=()=>{
       <input type="email" required name="user_email" placeholder='Enter your email' className='text-black text-lg p-2 rounded-md' />
       <label className='text-lg p-2 '>Message</label>
       <textarea name="message" placeholder='Enter your message' className='text-black text-lg p-2 rounded-md' />
-      <input type="submit" value="Send" className='border-white border m-5 rounded-md hover:cursor-pointer'/>
+      <input type="submit" value="Send" className='border-white border m-5 rounded-md hover:cursor-pointer hover:text-white hover:bg-black'/>
       </div>
     </form>
     </div>

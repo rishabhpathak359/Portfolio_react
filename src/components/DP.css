@@ -1,0 +1,57 @@
+.dp {
+    width: 35vw;
+    height: 50vh;
+    border-radius: 30% 70% 70% 30% / 30% 70% 70% 30%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  @keyframes morph {
+    0% {
+      border-radius: 30% 70% 70% 30% / 30% 70% 70% 30%;
+    }
+    50% {
+      border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+    }
+    100% {
+      border-radius: 30% 70% 70% 30% / 30% 70% 70% 30%;
+    }
+  }
+  
+  .dp::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/dpp.jpg');
+    background-size: cover;
+    animation: morph 5s ease-in-out infinite;
+  }
+ @media (max-width: 768px) {
+    .dp{
+        width: 50vw;
+        height: 30vh;
+    }
+}  
+ @media (max-width: 1300px) {
+    .dp{
+        width: 50vw;
+        height: 30vh;
+    }
+}  
+ @media (max-width: 450px) {
+    .dp{
+        margin-left:100px ;
+        width: 100vw;
+        height: 30vh;
+    }
+}  
+@media (max-width: 600px) {
+    .dp{
+        margin-left: 15px;
+        width: 70vw;
+        height: 30vh;
+    }
+}  
