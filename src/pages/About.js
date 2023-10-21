@@ -63,7 +63,7 @@ const AboutMe = () => {
 
       {isModalOpen && (
         <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50">
-          <div ref={modalRef} className="bg-orange-400 p-8 rounded-lg w-full h-[60vh] md:w-auto max-h-[80vh] md:max-h-[100vh] overflow-y-auto text-black">
+          <div ref={modalRef} className="bg-gray-400 p-8 rounded-lg w-full h-[60vh] md:w-auto max-h-[80vh] md:max-h-[100vh] overflow-y-auto text-black">
             <button onClick={toggleModal} className=" absolute top-4 right-2 text-white">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="30px" height="50px" fill='#ffffff'>
                 <path d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z"/>
