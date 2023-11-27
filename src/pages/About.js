@@ -55,7 +55,7 @@ const AboutMe = () => {
         </div>
         <button
           onClick={toggleModal}
-          className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-full transition duration-300 focus:outline-none"
+          className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-full transition duration-300 focus:outline-none animate-bounce"
         >
          Something For you
         </button>
